@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace homework
 {
@@ -129,10 +130,20 @@ namespace homework
         }
         static void Method5()
         {
-             Console.WriteLine("Введите номер месяца");
-             int month = int.Parse(Console.ReadLine());
+            int day = int.Parse(Console.ReadLine());
+            string[] days = CultureInfo.CurrentCulture.DateTimeFormat.DayNames;
+            Console.WriteLine(day == 7 ? days[0] : day <= 6 && day >= 1 ? days[day] : "ERROR");
+            Console.ReadKey(true);
 
-             switch (month)
+            Console.WriteLine("Введите месяц: ");
+             int month = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите год: ");
+             int year = int.Parse(Console.ReadLine());
+
+            
+            
+
+            switch (month)
              {
                  case 12:
                  case 1:
