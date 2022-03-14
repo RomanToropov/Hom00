@@ -130,6 +130,7 @@ namespace homework
         }
         static void Method5()
         {
+            Console.WriteLine("Введите число: ");
             int day = int.Parse(Console.ReadLine());
             string[] days = CultureInfo.CurrentCulture.DateTimeFormat.DayNames;
             Console.WriteLine(day == 7 ? days[0] : day <= 6 && day >= 1 ? days[day] : "ERROR");
@@ -137,6 +138,7 @@ namespace homework
 
             Console.WriteLine("Введите месяц: ");
              int month = int.Parse(Console.ReadLine());
+
             Console.WriteLine("Введите год: ");
              int year = int.Parse(Console.ReadLine());
 
