@@ -68,7 +68,7 @@ namespace homework
             if (num < 100000 || num > 999999) Console.WriteLine("вы ввели не шестизначное число");
             else
             {
-                Console.WriteLine($"Введите номера разрядов для обмена цифр: ");
+                Console.WriteLine($"Введите номера для обмена цифр: ");
                 int raz1 = Int32.Parse(Console.ReadLine());
                 int raz2 = Int32.Parse(Console.ReadLine());
 
